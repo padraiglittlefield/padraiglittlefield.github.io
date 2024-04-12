@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Taking a peak? 👀
+  Thanks for checking out my code! I'm always looking to improve my skills, 
+  so if you have any suggestions, please let me know!
+  You can reach me at:
+  Email: biz@alexj.io
+-->
+
+<!-- ***** Analytics ***** -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(92459538, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92459538" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+
+  <title>
+    Alex's Portfolio
+  </title>
+
+  <meta name="description" content="Engineering Student Based in Atlanta, Georgia">
+  <meta name="keywords" content="Kenneth ( Alex ) Jenkins - Alex Jenkins, Shell, Python, Java, C#, C++, HTML, Javascipt, CSS, Georgia Tech,
+  Clayton State, Univeristy, Atlanta, Georgia, Kenneth Jenkins, Computer Engineering, Engineer, Computer Science, Mathematics, Research" />
+  <link rel="stylesheet" href="index.css" />
+
+  <script>
+    function setBackground() {
+      // Check if the browser is Safari
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      
+      // Check if the device is mobile
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      // Set the default background
+      let backgroundImage = "linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/altdowntown.avif')";
+
+      // Change background based on browser
+      if (isSafari) {
+        backgroundImage = "linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/safariBackground.webp')";
+      }
+      
+      // Change background based on mobile device
+      if (isMobile) {
+        backgroundImage = "linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), url('./images/code.gif')";
+      }
+
+      document.querySelector('.header').style.backgroundImage = backgroundImage;
+    }
+
+    document.addEventListener('DOMContentLoaded', setBackground);
+  </script>
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="#resume" class="nav__link">Résumé</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>👋 Hi! I'm Alex!</span>
+        </h1>
+        <p>Computer Engineering Student at the Georgia Institute of Technology.</p>
+        <a href="#contact" class="btn btn--red">Let's Get in Touch!</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work 💼</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Argon </h3>
+              <p>
+                Argon is a Java-based downloadable software tool enabling software developers and power users to quickly and reliably utilize their Macs while leaving no trace.
+              </p>
+              <ul class="work__list">
+                <li>Java</li>
+                <li>Shell</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/Argon" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Argon">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/argon.webp" class="work__image" alt="Argon" width="600" height="550"/>
+            </div>
+          </div>   
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Buzz_Off 🐝</h3>
+              <p>
+                A simple browser extension that replaces any text related to The university(sic) Of Georgia with various insults.
+              </p>
+              <ul class="work__list">
+                <li>Javascript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://chrome.google.com/webstore/detail/buzzoff/njeiabnnggpilaodighggmecepfhmckp" class="link__text">
+                  Get for Chrome <span>&rarr;</span>
+                </a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/buzz_off/" class="link__text">
+                  Get for Firefox <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Buzz_off">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Buzz_Off.webp" class="work__image" alt="Buzz Off" width="960" height="540"/>
+            </div>
+          </div>
+
+          
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Calculus Cruncher 📘</h3>
+              <p>
+                An Open Source webapp built on Javascript designed for students studying mathematics.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/Calculus_Cruncher" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Calculus_Cruncher" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Calculus_cruncher.webp" class="work__image" alt="Calculus_Cruncher"  width="960" height="540"/>
+            </div>
+          </div>
+
+          <!-- <div class="work__box">
+            <div class="work__text">
+              <h3>Buzz_Off 🐝</h3>
+              <p>
+                A simple browser extension that replaces any text related to The university(sic) Of Georgia with various insults.
+              </p>
+              <ul class="work__list">
+                <li>Javascript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://chrome.google.com/webstore/detail/buzzoff/njeiabnnggpilaodighggmecepfhmckp" class="link__text">
+                  Get for Chrome <span>&rarr;</span>
+                </a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/buzz_off/" class="link__text">
+                  Get for Firefox <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Buzz_off">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Buzz_Off.webp" class="work__image" alt="Project 1" />
+            </div>
+          </div> -->
+
+          
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Newton's Method 👨‍🏫</h3>
+              <p>
+                A simple math research project program written in Python, 
+                under the supervision of Dr. Christopher Raridan, 
+                built to demonsrate Newton's Method of finding roots.
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/newtonsmethod" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/newtonsmethod">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/codingNewton.webp" class="work__image" alt="Newton's Method" width="500" height="500"/>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Java Math Iterator 🧮</h3>
+              <p>
+                A simple math research program written in Java, 
+                under the supervision of Dr. Christopher Raridan, 
+                to demonsrate the process of iterations in computer science.
+              </p>
+              <ul class="work__list">
+                <li>Java</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/java_math_integrator" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/java_math_integrator">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/javaMath.webp" class="work__image" alt="Java Math Iterator" width="500" height="500"/>
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Fedora Tweaks 🐧</h3>
+              <p>
+                A shell script that makes Fedora Linux more usable out of the box. 
+              </p>
+              <ul class="work__list">
+                <li>Shell</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/fedora-tweaks" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/fedora-tweaks">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/fedoraTweaks.webp" class="work__image" alt="Fedora Tweaks" width="500" height="500"/>
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Falling Into Viscosity</h3>
+              <p>
+                Presented at Clayton State University's Student Success Conference in Spring 2023, 
+                this project aimed to determine the viscosity of an unknown fluid by analyzing a video of a falling metal ball. 
+                The motion was tracked using Tracker software, and Stokes law was applied to relate the ball's velocity to the fluid's viscosity. 
+                The results demonstrated the effectiveness of combining Tracker software with Stokes law for measuring fluid viscosity, 
+                providing a low-cost and accessible method with potential applications in research and industry.
+              </p>
+              <ul class="work__list">
+                <li>Presented in collaboration with Joshua Chung (B.S. MechE 26' GT)</li>
+              </ul>
+              <ul class="work__list">
+                <li>Faculty Advisor - Dr. Tatiana Krivosheev (Ph.D. Physics)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/Capstone-Presentations/tree/main/Clayton_State_University/Viscosity" class="link__text">
+                  Visit Archive <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Capstone-Presentations/blob/main/Clayton_State_University/Viscosity/Manifest_SSC-2023.pdf" class="link__text">
+                  View Manifest <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Capstone-Presentations/blob/main/Clayton_State_University/Viscosity/Falling_Into_Viscosity.pptx">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Falling_Into_Viscosity.webp" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Developing Metacognitive Skills</h3>
+              <p>
+                Presented at Clayton State University's Student Success Conference in Spring 2023, 
+                this project aimed to examine the impact of developing metacognitive planning skills on student success in online math classes. 
+                The objective was to contribute to the research on metacognition in virtual learning environments and provide insights for educators
+                 and students in developing effective metacognitive strategies for online learning.
+              </p>
+              <ul class="work__list">
+                <li>Presented in collaboration with Jessica Gonzalez (B.S. Biology 23' CSU)</li>
+              </ul>
+              <ul class="work__list">
+                <li>Faculty Advisors - Dr. Christopher Raridan (Ph.D Mathematics), Dr. Barbara Musolf (Ph.D. Biology), Dr. Ann Showalter (Ph.D Biology), Mrs. Jelinda Spotorno (Senior Lecturure of Mathematics)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/rockenman1234/Capstone-Presentations/tree/main/Clayton_State_University/Metacognition" class="link__text">
+                  Visit Archive <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Capstone-Presentations/blob/main/Clayton_State_University/Metacognition/Manifest_SSC-2023.pdf" class="link__text">
+                  View Manifest <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/rockenman1234/Capstone-Presentations/blob/main/Clayton_State_University/Metacognition/Developing_Metacognitive_Skills(CSU).pptx">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Developing_Metacognitive_Skills_CSU_.webp" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>ECE Discovery Project</h3>
+              <p>
+                Featured in Georgia Tech's ECE-1100 course, 
+                this assignment revolved around an independent exploration project. 
+                Over the course of a semester, I embarked on a self-selected project, 
+                subject to approval from course instructors. I utilized resources at Georgia Tech,
+                like mini-project workshops available at the Interdisciplinary Design Commons (IDC), 
+                the Hive Maker Space, Robotarium, and other campus facilities. 
+              </p>
+              <ul class="work__list">
+                <li>A hands-on project where I picked up engineering principles by tackling real-world issues, 
+                  mastering the art of soldering.</li>
+              </ul>
+              <ul class="work__list">
+                <li>Faculty Advisors - Dr. Lakshmi Raju (Ph.D ECE), Dr. Jacki Rohde (Ph.D. Education)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="/discoveryProject.html" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/discoveryProject.webp" class="work__image" alt="Discovery Project" width="500" height="500"/>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- ***** Resume ***** -->
+
+  <section class="resume" id="resume">
+    <div class="row">
+      <h2>Resume 👨‍💼</h2>
+      <body>
+        <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/rockenman1234/resume/784f137c866072e2b87a9275524aeafa3170c643/Resume.pdf#sidebar=0" style="width:100%; height:100vh;" frameborder="0"></iframe>
+      </body>                
+    </div>
+  </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me 🤓</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Hi! I'm Alex! I'm a College student studying Computer Engineering at The
+              Georgia Institute of Technology! (Go Jackets! 🐝)
+            </p>
+            
+            <p>
+              My threads are  <a href="https://ece.gatech.edu/cybersecurity-thread" target=”_blank” class="text">Cyber Security</a>, & <a href="https://ece.gatech.edu/systems-architecture-thread"  target=”_blank” class="text">Systems and Architecture</a>.
+              My interests are in the field of Software Design, Hardware Design, Cyber Security, and Undergraduate Education.
+            </p>
+
+            <p>
+              I have participated in 3 research projects, all within the University System of Georgia. Additionally, I worked as a Law Clerk at Foster and Smith, LLC in Jonesboro, Georgia. 
+              Currently, I'm a member of the Institute of Electrical and Electronics Engineers (IEEE) at Georgia Tech. In the past, 
+              I was a member of the Clayton State Mathematics Club and a Teaching Assistant in the Mathematics Department at Clayton State University.
+            </p>
+            <a href="https://github.com/rockenman1234/resume/raw/main/Resume.pdf" class="btn">View My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/headshot.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Let's Get in Touch 📬</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a reliable and efficient solution to represent 
+          your product or business in the field of software and/or hardware design? 
+          Or perhaps you have some advice to share and just want to say "Hi 👋"? 
+          In any case, feel free to reach out to me. I will do my best to respond promptly! 
+          😊 
+        </p>
+
+        <p>
+          (The quickest way to get in touch with me is via email 👇)
+        </p>
+        <a href="mailto:biz@alexj.io" class="btn"> 📧 Email Me Here!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/rockenman1234/" target="_blank" title="Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+          <a href="https://www.linkedin.com/in/alexj03/" target="_blank" title="Linkedin Profile">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+      <p>
+        <b> Made with ❤️ in Atlanta, Georgia </b>
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
